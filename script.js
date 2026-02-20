@@ -48,6 +48,7 @@ const phrases = [
 
 let index = 0;
 let timer = null;
+let audioEnabled = false;
 
 const imageEl = document.getElementById("animalImage");
 const nameEl = document.getElementById("animalName");
@@ -63,9 +64,11 @@ function updateView() {
   glossEl.textContent = phrases[index % phrases.length].gloss;
 
   audioEl.src = sounds[index % sounds.length];
-  audioEl.play().catch(() => {
-    startBtn.classList.remove("hidden");
-  });
+  if (audioEnabled) {
+    audioEl.play().catch(() => {
+      startBtn.classList.remove("hidden");
+    });
+  }
 }
 
 function next() {
@@ -81,6 +84,12 @@ function startLoop() {
 
 startBtn.addEventListener("click", () => {
   startBtn.classList.add("hidden");
+  audioEnabled = true;
+  audioEl.muted = false;
+  audioEl.play().catch(() => {
+    // If it still fails, keep the button visible.
+    startBtn.classList.remove("hidden");
+  });
   startLoop();
 });
 
