@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Postcards From My Jungle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <div class="image-wrap">
+        <img id="animalImage" src="images/animal_000.png" alt="Imagined animal" />
+      </div>
+      <div class="meta">
+        <p class="name" id="animalName"></p>
+        <p class="phrase" id="animalPhrase"></p>
+        <p class="gloss" id="animalGloss"></p>
+      </div>
+    </main>
+
+    <button id="startButton" class="start">Click to begin audio</button>
+    <audio id="audioPlayer" preload="metadata"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
