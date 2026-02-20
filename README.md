@@ -1,7 +1,8 @@
 # Postcards From My Jungle
 
-![Jungle animal](images/animal_000.png)
+![Jungle animal](images/animal_000.png)![Jungle animal](images/animal_001.png)![Jungle animal](images/animal_003.png)![Jungle animal](images/animal_004.png)![Jungle animal](images/animal_006.png)![Jungle animal](images/animal_007.png)![Jungle animal](images/animal_008.png)![Jungle animal](images/animal_009.png)
 
+https://samzadgit.github.io/postcards-from-my-jungle/
 ## What Codex Changed
 
 The original background was a flat black (`--bg`). Codex replaced it with layered gradients and subtle animation to simulate a soft, shifting jungle atmosphere.
